@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Propuesta de Valor - Servicio de Costura Personalizada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .value-proposition {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 30px;
+            max-width: 800px;
+            width: 100%;
+        }
+        .value-circle {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            margin: 0 auto;
+        }
+        .center-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            background-color: #ff0000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            z-index: 10;
+        }
+        .element {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            background-color: #ffcccc;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-weight: bold;
+            color: #ff0000;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .element:hover {
+            transform: scale(1.1);
+            background-color: #ff6666;
+            color: white;
+        }
+        .tooltip {
+            visibility: hidden;
+            position: absolute;
+            z-index: 1;
+            background-color: black;
+            color: white;
+            text-align: left;
+            border-radius: 6px;
+            padding: 10px;
+            width: 250px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .element:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="value-proposition">
+        <div class="value-circle">
+            <div class="center-circle">
+                Propuesta de Valor
+            </div>
+            
+            <!-- Elemento 1: Precio -->
+            <div class="element" style="top: 0; left: 50%; transform: translate(-50%, -150%);">
+                1. Precio
+                <div class="tooltip">
+                    • Servicios de costura con precios accesibles
+                    • Paquetes promocionales
+                    • Descuentos por volumen
+                </div>
+            </div>
+
+            <!-- Elemento 2: Novedad -->
+            <div class="element" style="top: 50px; right: 0; transform: translate(50%, 0);">
+                2. Novedad
+                <div class="tooltip">
+                    • Asesoría en línea para tomar medidas
+                    • Realidad aumentada para visualizar prendas
+                    • Simuladores de diseño
+                </div>
+            </div>
+
+            <!-- Elemento 3: Calidad -->
+            <div class="element" style="bottom: 50px; right: 0; transform: translate(50%, 0);">
+                3. Calidad
+                <div class="tooltip">
+                    • Materiales de alta calidad
+                    • Costura precisa
+                    • Garantía en cada prenda
+                </div>
+            </div>
+
+            <!-- Elemento 4: Conveniencia -->
+            <div class="element" style="bottom: 0; left: 50%; transform: translate(-50%, 150%);">
+                4. Conveniencia
+                <div class="tooltip">
+                    • Pedidos en línea
+                    • Entregas a domicilio
+                    • Citas sin largas esperas
+                </div>
+            </div>
+
+            <!-- Elemento 5: Marca/Status -->
+            <div class="element" style="bottom: 50px; left: 0; transform: translate(-50%, 0);">
+                5. Marca/Status
+                <div class="tooltip">
+                    • Identidad de marca sostenible
+                    • Colaboraciones con influencers
+                    • Moda personalizada
+                </div>
+            </div>
+
+            <!-- Elemento 6: Desempeño -->
+            <div class="element" style="top: 50px; left: 0; transform: translate(-50%, 0);">
+                6. Desempeño
+                <div class="tooltip">
+                    • Entregas rápidas sin perder calidad
+                    • Seguimiento de pedidos en tiempo real
+                    • Eficiencia en el servicio
+                </div>
+            </div>
+
+            <!-- Elemento 7: Reducción de Riesgo -->
+            <div class="element" style="top: 100px; right: 100px; transform: rotate(-45deg) translate(50%, -50%);">
+                7. Reducción de Riesgo
+                <div class="tooltip">
+                    • Garantía de satisfacción
+                    • Ajustes gratuitos
+                    • Política de reembolso transparente
+                </div>
+            </div>
+
+            <!-- Elemento 8: Reducción de Costes -->
+            <div class="element" style="bottom: 100px; right: 100px; transform: rotate(135deg) translate(-50%, 50%);">
+                8. Reducción de Costes
+                <div class="tooltip">
+                    • Uso de telas recicladas
+                    • Reparaciones económicas
+                    • Fomento del uso prolongado
+                </div>
+            </div>
+
+            <!-- Elemento 9: Diseño -->
+            <div class="element" style="top: 100px; left: 100px; transform: rotate(45deg) translate(-50%, -50%);">
+                9. Diseño
+                <div class="tooltip">
+                    • Personalización de prendas
+                    • Colaboración con diseñadores
+                    • Colecciones exclusivas
+                </div>
+            </div>
+
+            <!-- Elemento 10: Customización -->
+            <div class="element" style="bottom: 100px; left: 100px; transform: rotate(-135deg) translate(50%, 50%);">
+                10. Customización
+                <div class="tooltip">
+                    • Diseños personalizados
+                    • Bordados y estampados únicos
+                    • Ajustes a medida
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
