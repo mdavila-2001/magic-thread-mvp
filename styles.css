@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.value-proposition {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    height: 95vh;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-circle {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.center-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 180px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.element {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    font-size: 11px;
+    background-color: #ffcccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: #ff0000;
+    cursor: pointer;
+    transition: transform 0.3s;
+    padding: 5px;
+    z-index: 2;
+}
+
+.element:hover {
+    transform: scale(1.1);
+    background-color: #ff6666;
+    color: white;
+}
+
+.tooltip {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1000 !important;
+    background-color: black;
+    color: white;
+    text-align: left;
+    align-items: center;
+    border-radius: 6px;
+    padding: 8px;
+    width: 200px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    top: 00%;
+    left: 220%;
+    transform: translateX(-50%);
+    font-size: 12px;
+}
+
+.element:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
